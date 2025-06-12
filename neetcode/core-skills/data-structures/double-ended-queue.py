@@ -16,7 +16,6 @@ class Deque:
 	
 	def append(self, value: int) -> None:
 		node = Node(value)
-		
 		penultimate, tail = self.tail.prev, self.tail
 		
 		# connect nodes
@@ -25,7 +24,6 @@ class Deque:
 	
 	def appendleft(self, value: int) -> None:
 		node = Node(value)
-		
 		head, nxt = self.head, self.head.next
 		
 		# connect nodes
@@ -37,7 +35,6 @@ class Deque:
 			return -1
 		
 		penultimate, tail = self.tail.prev, self.tail
-		
 		# connect nodes while removing the last
 		penultimate.prev.next, tail.prev = tail, penultimate.prev
 		
@@ -48,7 +45,6 @@ class Deque:
 			return -1
 		
 		head, nxt = self.head, self.head.next
-		
 		# connect nodes while removing the first
 		head.next, nxt.next.prev = nxt.next, head
 		
