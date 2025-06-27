@@ -9,7 +9,6 @@ a kind of binary tree where the value of a left child is ***less than*** its par
 - the height/depth of every node is 1
 
 ### time complexities
-- search: **O(log(n))** given that it is roughly balanced, else **O(h)**
-- insertion/deletion: **O(log(n))** given that it is roughly balanced, else **O(h)**
+- insert/search/delete: **O(log(n))** given that it is roughly balanced, else **O(h)**
 
 ~ where **h** is the height of the tree
