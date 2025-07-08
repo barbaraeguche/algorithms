@@ -18,4 +18,6 @@ structures. most commonly, graphs are represented using the following:
 - adjacency list
 
 ### time complexities
+- matrix dfs: **O(4^(n * m))**
+- matrix bfs: **O(n * m)**
 - adjacency list: **O(v + e)**
