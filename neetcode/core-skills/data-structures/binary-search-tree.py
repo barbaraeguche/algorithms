@@ -46,13 +46,13 @@ class TreeMap:
 	def getInorderKeys(self) -> List[int]:
 		inorder = []
 		
-		def traversal(node):
+		def dfs(node):
 			if node:
-				traversal(node.left)
+				dfs(node.left)
 				inorder.append(node.key)
-				traversal(node.right)
+				dfs(node.right)
 		
-		traversal(self.root)
+		dfs(self.root)
 		return inorder
 	
 	def addToTree(self, root, node):
