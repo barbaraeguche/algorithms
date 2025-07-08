@@ -32,7 +32,7 @@ class Graph:
 			seen.add(source)
 			
 			# dfs on its neighbours
-			for neigh in self.graph.get(source, []):
+			for neigh in self.graph[source]:
 				if dfs(neigh, destination, seen):
 					return True
 			
