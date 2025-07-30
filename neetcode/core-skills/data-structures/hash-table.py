@@ -30,8 +30,7 @@ class HashTable:
 					node.val = value
 					return
 				
-				prev = node
-				node = node.next
+				prev, node = node, node.next
 			
 			# add to the end of list
 			prev.next = newNode
