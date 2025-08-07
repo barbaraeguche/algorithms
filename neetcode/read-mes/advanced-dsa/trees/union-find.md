@@ -107,17 +107,17 @@ def union(self, n1, n2):
 ```
 
 ### time complexities
-in the naive case, the `find` function will result in `O(n)` because it is possible that the tree is just a chain like a
+in the naive case, the `find` function will result in $`O(n)`$ because it is possible that the tree is just a chain like a
 linked list, and we have to traverse every single node.
 
-by implementing union by rank and path compression, we get a time complexity of `α(n)`, where `α` is called the
-**inverse ackermann function**. it is assumed to be constant, `O(1)`, for nearly all input sizes.
+by implementing union by rank and path compression, we get a time complexity of $`α(n)`$, where `α` is called the
+**inverse ackermann function**. it is assumed to be constant, $`O(1)`$, for nearly all input sizes.
 
-so, if `m` is the number of edges we have, then the time complexity of union-find is `O(m * α(n))` which is assumed to be
-`O(m)`.
+so, if `m` is the number of edges we have, then the time complexity of union-find is $`O(m * α(n))`$ which is assumed to be
+$`O(m)`$.
 
 ### space complexities
-for the parent and rank hashmaps, they usually take `0(n)` space, where `n` is the number of nodes.
+for the parent and rank hashmaps, they usually take $`0(n)`$ space, where `n` is the number of nodes.
 
 ### note:
 you don't need to understand the [**inverse ackermann function**](https://en.wikipedia.org/wiki/Ackermann_function), 

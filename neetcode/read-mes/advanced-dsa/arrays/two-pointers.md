@@ -11,5 +11,5 @@ we will start the `L pointer at `0` and `R` pointer at `arr.length - 1` and incr
 or both depending on the conditions given in the problem. this repeats until the pointers meet each other.
 
 ### time complexities
-- in both cases the time complexity is **O(n)** where `n` is the length of the input array. this is because we only 
+- in both cases the time complexity is **$O(n)$** where `n` is the length of the input array. this is because we only 
 visit each element once.

@@ -31,7 +31,7 @@ class Graph:
 			# add visited vertex to set
 			seen.add(source)
 			
-			# dfs on its neighbours
+			# dfs on its neighbors
 			for neigh in self.graph[source]:
 				if dfs(neigh, destination, seen):
 					return True

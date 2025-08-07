@@ -5,10 +5,10 @@ denotes the running sum of a `nums` subarray that starts from `0` and goes up to
 extremely useful when we want to retrieve the sum of a subarray ending at an arbitrary index, say `i`.
 
 ### time complexities
-- the time complexity to build the initial prefix sum is `O(n)`. however, to calculate a range sum, we will only perform
-`O(1)` operations no matter how large the array is.
+the time complexity to build the initial prefix sum is $`O(n)`$. however, to calculate a range sum, we will only perform
+$`O(1)`$ operations no matter how large the array is.
 
 ### space complexities
-- if we don't need the initial array, we can actually overwrite it with its prefix sum, which will bring the space 
-complexity down from `O(n)` to `O(1)`. this works because the size of an array's prefix sums will be the same as the 
+if we don't need the initial array, we can actually overwrite it with its prefix sum, which will bring the space 
+complexity down from $`O(n)`$ to $`O(1)`$. this works because the size of an array's prefix sums will be the same as the 
 size of the array.

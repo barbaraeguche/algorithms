@@ -7,4 +7,4 @@ let's say we're searching for number 9; the mid-value here is 5, so we can disca
 search on the right-hand side of 5.
 
 ### time complexities
-- always: **O(log(n))**
+- always: **$O(log(n))$**
