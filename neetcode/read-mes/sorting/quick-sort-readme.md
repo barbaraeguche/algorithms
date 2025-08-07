@@ -10,8 +10,8 @@ in value. e.g. for an array [7,3,7,4,5], if the pivot is 5, after looping throug
 look like this: [3,4,7,7,5]
 
 ### time complexities
-- in the best case, we pick a pivot such that we can always perform the partition in the middle: **O(n * log(n))**
-- in the worst case, the pivot is either the smallest or largest element: **O(n^2)**
+- in the best case, we pick a pivot such that we can always perform the partition in the middle: **$O(n * log(n))$**
+- in the worst case, the pivot is either the smallest or largest element: **$O(n^2)$**
 
 ### space complexities
-- sorting happens in-place: **O(1)**
+- sorting happens in-place: **$O(1)$**

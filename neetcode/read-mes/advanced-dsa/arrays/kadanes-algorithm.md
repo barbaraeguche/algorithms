@@ -1,6 +1,6 @@
 ## kadane's algorithm
 a greedy/dynamic programming algorithm that can be used on an array. it is used to calculate the maximum sum subarray 
-ending at a particular position and typically runs in `O(n)` time.
+ending at a particular position and typically runs in $`O(n)`$ time.
 
 ### optimizing with kadane's algorithm
 kadane's algorithm tells us that there is a way to calculate the largest sum by only making one pass on the array, 

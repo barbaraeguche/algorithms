@@ -5,7 +5,7 @@ it is not a stable sorting technique, i.e. the order of elements do not stay the
 in value. this is because we are overwriting the original array.
 
 ### time complexities
-- loops through the entire array: **O(n)**
+- loops through the entire array: **$O(n)$**
 
 ### space complexities
-- sorting happens in-place: **O(n)**
+- sorting happens in-place: **$O(n)$**

@@ -3,4 +3,4 @@ they (also called hash tables) store key-value pairs using a hash function to co
 allows for fast lookups, insertions, and deletions.
 
 ### time complexities
-- insert/search/remove: **O(1)** if we have a good hash, else **O(n)**
+- insert/search/remove: **$O(1)$** if we have a good hash, else **$O(n)$**

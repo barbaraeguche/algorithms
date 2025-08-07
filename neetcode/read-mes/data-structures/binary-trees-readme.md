@@ -6,7 +6,7 @@ a kind of binary tree where the value of a left child is ***less than*** its par
 ***greater than*** its parent value.
 
 ### time complexities
-- insert/search/delete: **O(log(n))** given that it is roughly balanced, else **O(h)**
+- insert/search/delete: **$O(log(n))$** given that it is roughly balanced, else **$O(h)$**
 
 ~ where **h** is the height of the tree
 

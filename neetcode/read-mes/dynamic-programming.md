@@ -8,5 +8,5 @@ and space.
 - **bottom-up (tabulation)**: computes the result of the base cases first and then works its way up.
 
 ### time complexities
-- 1-dimension: **O(n)**
-- 2-dimension: **O(n * m)**
+- 1-dimension: **$O(n)$**
+- 2-dimension: **$O(n * m)$**

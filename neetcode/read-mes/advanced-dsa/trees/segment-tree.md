@@ -7,9 +7,9 @@ suppose we were given a range of values. then, given a left and a right pointer 
 able to calculate the sum of the range. this is the fundamental textbook problem behind segment trees, and this is what
 we will be focusing on.
 
-solving this using an array is trivial but to go through the range, in the worst case, takes `O(n)` time. if we want to 
-update a value in an array, it is done in `O(1)` time. now, segment trees promise to implement both update and perform
-queries in `O(log(n))` time. though it adds more overhead to the update function, the tradeoff is that our search 
+solving this using an array is trivial but to go through the range, in the worst case, takes $`O(n)`$ time. if we want to 
+update a value in an array, it is done in $`O(1)`$ time. now, segment trees promise to implement both update and perform
+queries in $`O(log(n))`$ time. though it adds more overhead to the update function, the tradeoff is that our search 
 function will be much faster.
 
 not too dissimilar to merge sort, the idea here is to break up the array into segments, by a branching factor of two to 
@@ -108,7 +108,7 @@ def rangeQuery(self, L, R):
     return self.left.rangeQuery(L, M) + self.right.rangeQuery(M + 1, R)
 ```
 this is the most important operation of a segment tree - to calculate a range query. let's say that we are given the 
-range `0,5`. from the example we have shown above, this range is in the root node, which makes it an `O(1)` operation. 
+range `0,5`. from the example we have shown above, this range is in the root node, which makes it an $`O(1)`$ operation. 
 of course, this is the best case scenario.
 
 what if we are given a range that requires us to traverse down the tree? well, we will follow the same recursive procedure. 
@@ -121,7 +121,7 @@ in the code above, we have four conditionals. let's walk through cases under whi
 ### time complexities
 the time complexity of the three functions is as follows:
 
-- `build()` - `O(n)`, where `n` is the number of nodes our tree contains.
-- `update()` - `O(log(n))`, since we are going down the height of the tree, which is a balanced tree, where `h` is the 
-height of the tree, also known as `log(n)`.
-- `rangeQuery(L, R)` - `O(log(n))`, for reasons similar to the `update()` function.
+- `build()` - $`O(n)`$, where `n` is the number of nodes our tree contains.
+- `update()` - $`O(log(n))`$, since we are going down the height of the tree, which is a balanced tree, where `h` is the 
+height of the tree, also known as $`log(n)`$.
+- `rangeQuery(L, R)` - $`O(log(n))`$, for reasons similar to the `update()` function.
